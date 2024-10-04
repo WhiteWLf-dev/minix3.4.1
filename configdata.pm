@@ -34923,8 +34923,8 @@ unless (caller) {
     use File::Copy;
     use Pod::Usage;
 
-    use lib '/Users/tatianaagarkova/Downloads/openssl-master/util/perl';
-    use OpenSSL::fallback '/Users/tatianaagarkova/Downloads/openssl-master/external/perl/MODULES.txt';
+    use lib '/home/openssl-master/util/perl';
+    use OpenSSL::fallback '/home/openssl-master/external/perl/MODULES.txt';
 
     my $here = dirname($0);
 
@@ -34951,7 +34951,7 @@ unless (caller) {
             );
 
         use lib '.';
-        use lib '/Users/tatianaagarkova/Downloads/openssl-master/Configurations';
+        use lib '/home/openssl-master/Configurations';
         use gentemplate;
 
         open my $buildfile_template_fh, ">$buildfile_template"
@@ -34968,8 +34968,8 @@ unless (caller) {
 
         my $prepend = <<'_____';
 use File::Spec::Functions;
-use lib '/Users/tatianaagarkova/Downloads/openssl-master/util/perl';
-use lib '/Users/tatianaagarkova/Downloads/openssl-master/Configurations';
+use lib '/home/openssl-master/util/perl';
+use lib '/home/openssl-master/Configurations';
 use lib '.';
 use platform;
 _____
